@@ -1,8 +1,9 @@
 #include "stm32g0xx_hal.h"
 /* Test example LED: PA5 */
-#define LED_PIN                                GPIO_PIN_5
-#define LED_GPIO_PORT                          GPIOA
-#define LED_GPIO_CLK_ENABLE()                  __HAL_RCC_GPIOA_CLK_ENABLE()
+/* for nucleo g031k8: PC6 */
+#define LED_PIN                                GPIO_PIN_6
+#define LED_GPIO_PORT                          GPIOC
+#define LED_GPIO_CLK_ENABLE()                  __HAL_RCC_GPIOC_CLK_ENABLE()
 
 int main(void)
 {

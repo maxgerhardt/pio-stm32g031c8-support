@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
-/* blink LED on PA12 as example */
-#define LED_ARDUINO_PIN_NUM PA12
+/* blink the define builtin LED as example */
+#define LED_ARDUINO_PIN_NUM LED_BUILTIN
 
 void setup() {
     pinMode(LED_ARDUINO_PIN_NUM, OUTPUT);
